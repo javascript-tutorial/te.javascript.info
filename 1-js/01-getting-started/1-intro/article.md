@@ -1,121 +1,126 @@
-# An Introduction to JavaScript
+# జావాస్క్రిప్ట్‌కు పరిచయం
 
-Let's see what's so special about JavaScript, what we can achieve with it, and what other technologies play well with it.
+జావాస్క్రిప్ట్ యొక్క ప్రత్యేకత ఏమిటి, దానితో మనం ఏమి సాధించగలం మరియు ఏ ఇతర సాంకేతిక పరిజ్ఞానాలు దానితో బాగా ఇముడుతాయో చూద్దాం.
 
-## What is JavaScript?
+## జావాస్క్రిప్ట్ అంటే ఏమిటి?
 
-*JavaScript* was initially created to "make web pages alive".
+*జావాస్క్రిప్ట్* మొదట్లో "వెబ్ పేజీలను సజీవంగా మార్చడానికి" సృష్టించబడింది.
 
-The programs in this language are called *scripts*. They can be written right in a web page's HTML and run automatically as the page loads.
+ఈ భాషలోని ప్రోగ్రామ్‌లను *స్క్రిప్ట్స్* అంటారు. వాటిని వెబ్ పేజీ యొక్క HTML లోనే వ్రాయవచ్చు మరియు పేజీ లోడ్ అయినప్పుడు స్వయంచాలకంగా నడుస్తుంది.
 
-Scripts are provided and executed as plain text. They don't need special preparation or compilation to run.
+స్క్రిప్ట్‌లు సాదా వచనంగా అందించబడతాయి మరియు అమలు చేయబడతాయి. అమలు చేయడానికి వాటికి ప్రత్యేక తయారీ లేదా సంకలనం అవసరం లేదు.
 
-In this aspect, JavaScript is very different from another language called [Java](https://en.wikipedia.org/wiki/Java_(programming_language)).
+ఈ అంశంలో, జావాస్క్రిప్ట్ [జావా](https://en.wikipedia.org/wiki/Java_(programming_language)) అనే మరొక భాష నుండి చాలా భిన్నంగా ఉంటుంది.
 
-```smart header="Why is it called <u>Java</u>Script?"
-When JavaScript was created, it initially had another name: "LiveScript". But Java was very popular at that time, so it was decided that positioning a new language as a "younger brother" of Java would help.
+```smart header="దీన్ని <u>జావా</u>స్క్రిప్ట్ అని ఎందుకు పిలుస్తారు?"
+మొదట్లో జావాస్క్రిప్ట్ సృష్టించబడినప్పుడు, దీనికి "లైవ్‌స్క్రిప్ట్" అని మరొక పేరు ఉండేది. కానీ ఆ సమయంలో జావా బాగా ప్రాచుర్యం పొందింది, కాబట్టి ఈ కొత్త భాషను జావా యొక్క "తమ్ముడు" గా అభివర్ణించుట వలన, ప్రధాన్యత పెరుగునని నిర్ణయించారు.
 
-But as it evolved, JavaScript became a fully independent language with its own specification called [ECMAScript](http://en.wikipedia.org/wiki/ECMAScript), and now it has no relation to Java at all.
+కాని అభివృద్ధి చెందుతున్నప్పుడు, జావాస్క్రిప్ట్ దాని స్వంత స్పెసిఫికేషన్ [ECMAScript] (http://en.wikipedia.org/wiki/ECMAScript) తో పూర్తిగా స్వతంత్ర భాషగా మారింది. ఇప్పుడు దీనికి జావాతో ఎటువంటి సంబంధం లేదు.
 ```
 
-Today, JavaScript can execute not only in the browser, but also on the server, or actually on any device that has a special program called [the JavaScript engine](https://en.wikipedia.org/wiki/JavaScript_engine).
+ఈ రోజు, జావాస్క్రిప్ట్ బ్రౌజర్‌లో మాత్రమే కాకుండా, సర్వర్‌లో లేదా వాస్తవానికి [జావాస్క్రిప్ట్ ఇంజిన్] (https://en.wikipedia.org/wiki/JavaScript_engine) అని పిలువబడే ప్రత్యేక ప్రోగ్రామ్ ఉన్న ఏదైనా పరికరంలో కూడా అమలు చేయగలదు.
 
-The browser has an embedded engine sometimes called a "JavaScript virtual machine".
+బ్రౌజర్‌లో ఎంబెడెడ్ ఇంజిన్ ఉంది, దీనిని కొన్నిసార్లు "జావాస్క్రిప్ట్ వర్చువల్ మెషిన్" అని పిలుస్తారు.
 
-Different engines have different "codenames". For example:
+వేర్వేరు ఇంజన్లు వేర్వేరు "సంకేతనామాలను" కలిగి ఉంటాయి. ఉదాహరణకి:
 
-- [V8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- in Chrome and Opera.
-- [SpiderMonkey](https://en.wikipedia.org/wiki/SpiderMonkey) -- in Firefox.
-- ...There are other codenames like "Chakra" for IE, "ChakraCore" for Microsoft Edge, "Nitro" and "SquirrelFish" for Safari, etc.
+- [వి8](https://en.wikipedia.org/wiki/V8_(JavaScript_engine)) -- క్రోం మరియు ఒపెర లో.
+- [స్పైడర్ మంకీ](https://en.wikipedia.org/wiki/SpiderMonkey) -- ఫైర్‌ఫాక్స్ లో.
+- ...IE కోసం "చక్ర", మైక్రోసాఫ్ట్ ఎడ్జ్ కోసం "చక్ర కోర్", సఫారి కోసం "నైట్రో" మరియు "స్క్విరెల్ ఫిష్" వంటి ఇతర సంకేతనామాలు ఉన్నాయి.
 
-The terms above are good to remember because they are used in developer articles on the internet. We'll use them too. For instance, if "a feature X is supported by V8", then it probably works in Chrome and Opera.
+పై నిబంధనలు గుర్తుంచుకోవడం మంచిది ఎందుకంటే అవి ఇంటర్నెట్‌లోని డెవలపర్ కథనాలలో ఉపయోగించబడతాయి. మేము వాటిని కూడా ఉపయోగిస్తాము. ఉదాహరణకు, "V8, ఫీచర్ X కి మద్దతు ఇస్తుంది" అంటే, ఇది బహుశా Chrome మరియు Opera లో పనిచేస్తుంది.
 
-```smart header="How do engines work?"
+```smart header="ఇంజన్లు ఎలా పని చేస్తాయి?"
 
-Engines are complicated. But the basics are easy.
+ఇంజన్లు సంక్లిష్టంగా ఉంటాయి. కానీ బేసిక్స్ సులభం.
 
-1. The engine (embedded if it's a browser) reads ("parses") the script.
-2. Then it converts ("compiles") the script to the machine language.
-3. And then the machine code runs, pretty fast.
+1. ఇంజిన్ (బ్రౌజర్ అయితే, అందులొ పొందుపరచబడి వున్న) స్క్రిప్ట్‌ను చదువుతుంది ("పార్స్").
+2. అప్పుడు అది స్క్రిప్ట్‌ను మెషిన్ కోడ్ గా మారుస్తుంది ("కంపైల్స్").
+3. ఆపై మెషిన్ కోడ్ చాలా వేగంగా నడుస్తుంది.
 
-The engine applies optimizations at each step of the process. It even watches the compiled script as it runs, analyzes the data that flows through it, and further optimizes the machine code based on that knowledge.
+ఇంజిన్, ప్రోసెస్స్ యొక్క ప్రతి దశలోను సర్వోత్తమీకరణం అనువర్తిస్తుంది. ఇది కంపైల్డ్ స్క్రిప్ట్‌ను నడుపుతున్నప్పుడు కూడా దాన్ని గమనిస్తుంది, దాని ద్వారా ప్రవహించే సమాచారమును విశ్లేషిస్తుంది మరియు ఆ జ్ఞానం ఆధారంగా మెషిన్ కోడ్‌ను మరింత అనుకూలపరుస్తుంది.
 ```
 
-## What can in-browser JavaScript do?
+## బ్రౌజర్‌లో జావాస్క్రిప్ట్ ఏమి చేయగలదు?
 
-Modern JavaScript is a "safe" programming language. It does not provide low-level access to memory or CPU, because it was initially created for browsers which do not require it.
+ఆధునిక జావాస్క్రిప్ట్ "సురక్షితమైన" ప్రోగ్రామింగ్ భాష. ఇది మెమరీ లేదా CPU కి తక్కువ-స్థాయి ప్రాప్యతను అందించదు, ఎందుకంటే ఇది ప్రారంభంలో అది అవసరం లేని బ్రౌజర్‌ల కోసం సృష్టించబడింది.
 
-JavaScript's capabilities greatly depend on the environment it's running in. For instance, [Node.js](https://wikipedia.org/wiki/Node.js) supports functions that allow JavaScript to read/write arbitrary files, perform network requests, etc.
+జావాస్క్రిప్ట్ యొక్క సామర్థ్యాలు అది నడుస్తున్న పర్యావరణంపై బాగా ఆధారపడి ఉంటాయి. ఉదాహరణకు, [Node.js] (https://wikipedia.org/wiki/Node.js) జావాస్క్రిప్ట్‌ను ఏకపక్ష ఫైళ్ళను చదవడానికి / వ్రాయడానికి, నెట్‌వర్క్ అభ్యర్థనలను నిర్వహించడానికి అనుమతించే ఫంక్షన్లకు మద్దతు, మొదలైనవి ఇస్తుంది.
 
-In-browser JavaScript can do everything related to webpage manipulation, interaction with the user, and the webserver.
+ఇన్-బ్రౌజర్ జావాస్క్రిప్ట్ వెబ్‌పేజీ తారుమారు, వినియోగదారుతో పరస్పర చర్య మరియు వెబ్‌సర్వర్‌కు సంబంధించిన ప్రతిదాన్ని చేయగలదు.
 
-For instance, in-browser JavaScript is able to:
+ఉదాహరణకు, బ్రౌజర్‌లోని జావాస్క్రిప్ట్ వీటిని చేయగలదు:
 
-- Add new HTML to the page, change the existing content, modify styles.
-- React to user actions, run on mouse clicks, pointer movements, key presses.
-- Send requests over the network to remote servers, download and upload files (so-called [AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) and [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) technologies).
-- Get and set cookies, ask questions to the visitor, show messages.
-- Remember the data on the client-side ("local storage").
+- పేజీకి క్రొత్త HTML ని జోడించటం, ఇప్పటికే ఉన్న కంటెంట్‌ను మార్చటం, ష్టైల్లను సవరించటం.
+- వినియోగదారు చర్యలకు ప్రతిస్పందించటం, మౌస్ క్లిక్‌లు, పాయింటర్ కదలికలు, కీ ప్రెస్‌లపై అమలు చేయటం.
+- రిమోట్ సర్వర్‌లకు నెట్‌వర్క్ ద్వారా అభ్యర్థనలను పంపటం, ఫైల్‌లను డౌన్‌లోడ్ చేసి అప్‌లోడ్ చేయటం ([AJAX](https://en.wikipedia.org/wiki/Ajax_(programming)) మరియు [COMET](https://en.wikipedia.org/wiki/Comet_(programming)) వంటి టెక్నాలజీస్).
+- కుకీలను పొందటం మరియు సెట్ చేయటం, సందర్శకుడిని ప్రశ్నలు అడగటం, సందేశాలను చూపించటం.
+- క్లయింట్ వైపు ("స్థానిక నిల్వ") డేటాను గుర్తుంచుకోండి.
 
-## What CAN'T in-browser JavaScript do?
+## జావాస్క్రిప్ట్ బ్రౌజర్‌లో ఏమి చేయలేదు?
 
-JavaScript's abilities in the browser are limited for the sake of the user's safety. The aim is to prevent an evil webpage from accessing private information or harming the user's data.
+బ్రౌజర్‌లో జావాస్క్రిప్ట్ యొక్క సామర్థ్యాలు యూజర్ యొక్క భద్రత కోసమే పరిమితం. ఒక చెడు వెబ్‌పేజీ, యూజర్ యొక్క ప్రైవేట్ సమాచారాన్ని యాక్సెస్ చేయకుండా, లేదా డేటాను హాని చేయకుండా నిరోధించడం దీని లక్ష్యం.
 
-Examples of such restrictions include:
+అటువంటి పరిమితుల ఉదాహరణలు:
 
-- JavaScript on a webpage may not read/write arbitrary files on the hard disk, copy them or execute programs. It has no direct access to OS functions.
+- వెబ్‌పేజీలోని జావాస్క్రిప్ట్ హార్డ్ డిస్క్‌లో ఏకపక్ష ఫైల్‌లను చదవడం/వ్రాయడం, వాటిని కాపీ చేయడం లేదా ప్రోగ్రామ్‌లను అమలు చేయడం వంటివి చేయకపోవచ్చు. దీనికి OS ఫంక్షన్లకు ప్రత్యక్ష ప్రాప్యత లేదు.
 
-    Modern browsers allow it to work with files, but the access is limited and only provided if the user does certain actions, like "dropping" a file into a browser window or selecting it via an `<input>` tag.
+  ఆధునిక బ్రౌజర్‌లు ఫైల్‌లతో పనిచేయడానికి అనుమతిస్తాయి, అయితే ఆ యాక్సెస్ వినియోగదారు బ్రౌజర్ విండోలోకి ఫైల్‌ను "డ్రాప్" చేయడం లేదా `<input>` ట్యాగ్ ద్వారా ఎంచుకోవడం వంటి కొన్ని చర్యలు చేస్తేనే అందించబడుటకు పరిమితం.
 
-    There are ways to interact with camera/microphone and other devices, but they require a user's explicit permission. So a JavaScript-enabled page may not sneakily enable a web-camera, observe the surroundings and send the information to the [NSA](https://en.wikipedia.org/wiki/National_Security_Agency).
-- Different tabs/windows generally do not know about each other. Sometimes they do, for example when one window uses JavaScript to open the other one. But even in this case, JavaScript from one page may not access the other if they come from different sites (from a different domain, protocol or port).
+  కెమెరా/మైక్రోఫోన్ మరియు ఇతర పరికరాలతో సంభాషించడానికి మార్గాలు ఉన్నాయి, కానీ వాటికి వినియోగదారు యొక్క స్పష్టమైన అనుమతి అవసరం. కాబట్టి జావాస్క్రిప్ట్-ప్రారంభించబడిన పేజీ వెబ్-కెమెరాను చాటుగా ఎనేబుల్ చేయకపోవచ్చు, పరిసరాలను గమనించి, సమాచారాన్ని [NSA](https://en.wikipedia.org/wiki/National_Security_Agency) కు పంపకపోవచ్చు.
 
-    This is called the "Same Origin Policy". To work around that, *both pages* must agree for data exchange and contain a special JavaScript code that handles it. We'll cover that in the tutorial.
+- వేర్వేరు ట్యాబ్‌లు/విండోస్ సాధారణంగా ఒకదాని గురించి మరొకదానికి తెలియదు. కాని అప్పుడప్పుడు వాటికి తెలుసు, ఉదాహరణకు ఒక విండో మరొకటి తెరవడానికి జావాస్క్రిప్ట్‌ను ఉపయోగించినప్పుడు. ఈ సందర్భంలో కూడా, ఒక పేజీ నుండి జావాస్క్రిప్ట్ వేరే సైట్ల నుండి వచ్చినట్లయితే (వేరే డొమైన్, ప్రోటోకాల్ లేదా పోర్ట్ నుండి) వాటిని యాక్సెస్ చేయకపోవచ్చు.
 
-    This limitation is, again, for the user's safety. A page from `http://anysite.com` which a user has opened must not be able to access another browser tab with the URL `http://gmail.com` and steal information from there.
-- JavaScript can easily communicate over the net to the server where the current page came from. But its ability to receive data from other sites/domains is crippled. Though possible, it requires explicit agreement (expressed in HTTP headers) from the remote side. Once again, that's a safety limitation.
+  దీనిని "శేం ఆరిజిన్ పాలిసి" అంటారు. దానిని తప్పించడానికి, *రెండు పేజీలు* డేటా మార్పిడి కోసం అంగీకరించాలి మరియు దానిని నిర్వహించే ప్రత్యేక జావాస్క్రిప్ట్ కోడ్‌ను కలిగి ఉండాలి. మేము దానిని ట్యుటోరియల్‌లో కవర్ చేస్తాము.
+
+  ఈ పరిమితి, మళ్ళీ, వినియోగదారు భద్రత కోసం. వినియోగదారు తెరిచిన `http://anysite.com` నుండి, మరొక బ్రౌజర్ టాబ్ లో తెరిచిన `http://gmail.com` URL ను యాక్సెస్ చేసి అక్కడి నుండి సమాచారాన్ని దొంగిలించుటను అవరోధించేందుకు.
+
+- ప్రస్తుత పేజీ వచ్చిన సర్వర్‌కు జావాస్క్రిప్ట్ నెట్ ద్వారా సులభంగా కమ్యూనికేట్ చేయగలదు. కానీ ఇతర సైట్‌లు/డొమైన్‌ల నుండి డేటాను స్వీకరించే సామర్థ్యం విఫలమౌతుంది. సాధ్యమైనప్పటికీ, దీనికి రిమోట్ వైపు నుండి స్పష్టమైన ఒప్పందం (HTTP శీర్షికలలో వ్యక్తీకరించటం) అవసరం. మరోసారి, అది భద్రతా పరిమితి.
+
 
 ![](limitations.svg)
 
-Such limits do not exist if JavaScript is used outside of the browser, for example on a server. Modern browsers also allow plugin/extensions which may ask for extended permissions.
+జావాస్క్రిప్ట్‌ను బ్రౌజర్ వెలుపల ఉపయోగించినప్పుడు అలాంటి పరిమితులు ఉండవు, ఉదాహరణకు సర్వర్‌లో. ఆధునిక బ్రౌజర్‌లు ప్లగిన్/పొడిగింపుల సహాయంతొ అదనపు అనుమతులను అడగవచ్చు.
 
-## What makes JavaScript unique?
+## జావాస్క్రిప్ట్ ఎందుకంత ప్రత్యేకమైనది?
 
-There are at least *three* great things about JavaScript:
+జావాస్క్రిప్ట్ గురించి కనీసం *మూడు* గొప్ప విషయాలు ఉన్నాయి:
 
 ```compare
-+ Full integration with HTML/CSS.
-+ Simple things are done simply.
-+ Support by all major browsers and enabled by default.
++ HTML/CSS తో పూర్తి అనుసంధానం.
++ సరళమైన పనులు సరళంగా జరగటం.
++ అన్ని ప్రధాన బ్రౌజర్‌ల మద్దతు మరియు అప్రమేయంగా ప్రారంభించబడటం.
 ```
-JavaScript is the only browser technology that combines these three things.
 
-That's what makes JavaScript unique. That's why it's the most widespread tool for creating browser interfaces.
+ఈ మూడు విషయాలను మిళితం చేసే ఏకైక బ్రౌజర్ టెక్నాలజీ జావాస్క్రిప్ట్.
 
-That said, JavaScript also allows to create servers, mobile applications, etc.
+అదే జావాస్క్రిప్ట్‌ను ప్రత్యేకంగా చేస్తుంది. అందుకే బ్రౌజర్ ఇంటర్‌ఫేస్‌లను సృష్టించడానికి ఇది చాలా విస్తృతమైన సాధనం.
 
-## Languages "over" JavaScript
+జావాస్క్రిప్ట్ సర్వర్లు, మొబైల్ అనువర్తనాలు మొదలైనవాటిని సృష్టించడానికి కూడా ఉపయోగపడుతుంది.
 
-The syntax of JavaScript does not suit everyone's needs. Different people want different features.
+## జావాస్క్రిప్ట్ "ఆధారిత" భాషలు
 
-That's to be expected, because projects and requirements are different for everyone.
+జావాస్క్రిప్ట్ యొక్క వాక్యనిర్మాణం ప్రతి ఒక్కరి అవసరాలకు సరిపోదు. వేర్వేరు వ్యక్తులు విభిన్న లక్షణాలను కోరుకుంటారు.
 
-So recently a plethora of new languages appeared, which are *transpiled* (converted) to JavaScript before they run in the browser.
+అది అర్థంచేసుకోవచ్చు. ప్రతి ఒక్కరి ప్రాజెక్టులు మరియు అవసరాలు భిన్నంగా ఉంటాయి.
 
-Modern tools make the transpilation very fast and transparent, actually allowing developers to code in another language and auto-converting it "under the hood".
+ఇటీవల బ్రౌజర్‌లో అమలు చేయడానికి ముందు జావాస్క్రిప్ట్‌కు *ట్రాన్స్‌పైల్* (మార్చబడిన) కొత్త భాషల సంఖ్య గణనీయంగా పెరిగింది.
 
-Examples of such languages:
+ఆధునిక సాధనాలు ట్రాన్స్‌పిలేషన్‌ను చాలా వేగంగా మరియు పారదర్శకంగా చేస్తున్నాయి, వాస్తవానికి డెవలపర్‌లను మరొక భాషలో కోడ్ చేయించి, దానిని "తెర వెనుక" తర్జుమా చేస్తున్నాయి.
 
-- [CoffeeScript](http://coffeescript.org/) is a "syntactic sugar" for JavaScript. It introduces shorter syntax, allowing us to write clearer and more precise code. Usually, Ruby devs like it.
-- [TypeScript](http://www.typescriptlang.org/) is concentrated on adding "strict data typing" to simplify the development and support of complex systems. It is developed by Microsoft.
-- [Flow](http://flow.org/) also adds data typing, but in a different way. Developed by Facebook.
-- [Dart](https://www.dartlang.org/) is a standalone language that has its own engine that runs in non-browser environments (like mobile apps), but also can be transpiled to JavaScript. Developed by Google.
-- [Brython](https://brython.info/) is a Python transpiler to JavaScript that enables the writing of applications in pure Python without JavaScript.
+అటువంటి భాషల ఉదాహరణలు:
 
-There are more. Of course, even if we use one of transpiled languages, we should also know JavaScript to really understand what we're doing.
+- [కాఫీస్క్రిప్ట్](http://coffeescript.org/) జావాస్క్రిప్ట్ కోసం "వాక్యనిర్మాణ చక్కెర". ఇది తక్కువ వాక్యనిర్మాణంతో పరిచయం చేసి, స్పష్టమైన మరియు మరింత ఖచ్చితమైన కోడ్‌ను వ్రాయడానికి అనుమతిస్తుంది. సాధారణంగా, రూబీ డెవ్స్ దీన్ని ఇష్టపడతారు.
+- [టైప్‌స్క్రిప్ట్](http://www.typescriptlang.org/) సంక్లిష్ట వ్యవస్థల అభివృద్ధి మరియు మద్దతును సరళీకృతం చేయడానికి "కఠినమైన డేటా టైపింగ్" ను జోడించడంపై కేంద్రీకృతమై ఉంది. దీనిని మైక్రోసాఫ్ట్ అభివృద్ధి చేసింది.
+- [ఫ్లో](http://flow.org/) ఇది కూడా డేటా టైపింగ్‌ను జతచేస్తుంది, కానీ వేరే విధంగా. ఫేస్‌బుక్ అభివృద్ధి చేసింది.
+- [డార్ట్](https://www.dartlang.org/) బ్రౌజర్ కాని పరిసరాలలో (మొబైల్ అనువర్తనాలు వంటివి) నడుస్తూ దాని స్వంత ఇంజిన్‌ను కలిగి ఉన్న స్వతంత్ర భాష, కానీ జావాస్క్రిప్ట్‌ను కూడా రవాణా చేయవచ్చు. Google చే అభివృద్ధి చేయబడింది.
+- [బ్రైతాన్](https://brython.info/) జావాస్క్రిప్ట్‌కు పైథాన్ ట్రాన్స్‌పైలర్, ఇది జావాస్క్రిప్ట్ లేకుండా స్వచ్ఛమైన పైథాన్‌లో అనువర్తనాల రచనకు తోడ్పడుతుంది.
 
-## Summary
 
-- JavaScript was initially created as a browser-only language, but it is now used in many other environments as well.
-- Today, JavaScript has a unique position as the most widely-adopted browser language with full integration in HTML/CSS.
-- There are many languages that get "transpiled" to JavaScript and provide certain features. It is recommended to take a look at them, at least briefly, after mastering JavaScript.
+ఇంకా చాలా ఉన్నాయి. వాస్తవానికి, ట్రాన్స్‌పైల్డ్ భాషలలో ఒకదాన్ని ఉపయోగించినప్పటికీ, మనం ఏమి చేస్తున్నామో నిజంగా అర్థం చేసుకోవడానికి జావాస్క్రిప్ట్‌ను కూడా తెలుసుకోవాలి.
+
+## సారాంశం
+
+- జావాస్క్రిప్ట్ మొదట్లో బ్రౌజర్-సంబంధిత భాషగా సృష్టించబడింది, కానీ ఇప్పుడు ఇది అనేక ఇతర వాతావరణాలలో కూడా ఉపయోగించబడింది.
+- ఈ రోజు, జావాస్క్రిప్ట్ HTML/CSS లో పూర్తి ఏకీకరణతో విస్తృతంగా స్వీకరించబడిన బ్రౌజర్ భాషగా ప్రత్యేకమైన స్థానాన్ని కలిగి ఉంది.
+- జావాస్క్రిప్ట్‌కు "ట్రాన్స్‌పైల్" చేసే అనేక భాషలు ఉన్నాయి. జావాస్క్రిప్ట్‌లొ నైపుణ్యం సాధించిన తరువాత, కనీసం క్లుప్తంగా, వాటిని పరిశీలించాలని సిఫార్సు చేయబడటమైనది.
