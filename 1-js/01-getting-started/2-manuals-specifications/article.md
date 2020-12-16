@@ -1,42 +1,42 @@
 
-# Manuals and specifications
+# నియమ సంపుటి మరియు వివరణము
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources.
+ఈ పుస్తకం ఒక *ట్యుటోరియల్*. ఇది క్రమంగా భాషను నేర్చుకోవడంలో మీకు సహాయపడుతుంది. మీరు ప్రాథమిక విషయాలను తెలుసుకున్న తర్వాత, మీకు ఇతర వనరులు అవసరం అవుతాయి.
 
-## Specification
+## వివరణము
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+[ECMA-262 వివరణము](https://www.ecma-international.org/publications/standards/Ecma-262.htm) జావాస్క్రిప్ట్ గురించి చాలా లోతైన, వివరణాత్మక మరియు అధికారిక సమాచారాన్ని కలిగి ఉంది. ఇది భాషను నిర్వచిస్తుంది.
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
+కానీ అది లాంఛనప్రాయంగా ఉండటంతో, మొదట అర్థం చేసుకోవడం కష్టం. కాబట్టి భాషా వివరాల గురించి మీకు అత్యంత విశ్వసనీయమైన సమాచారం అవసరమైతే, వివరణమును సంప్రదించవచ్చు. కానీ ఇది రోజువారీ ఉపయోగం కోసం కాదు.
 
-A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+ప్రతి సంవత్సరం కొత్త వివరణపు కథనం విడుదల అవుతుంది. ఈ విడుదలల మధ్య, తాజా వివరణపు సంకల్పపత్రము <https://tc39.es/ecma262/> వద్ద వుంటుంది.
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+"దాదాపు ప్రామాణికం" ("స్టేజ్ 3" అని పిలవబడే) సరి కొత్త లక్షణాల గురించి చదవడానికి, <https://github.com/tc39/proposals> వద్ద ప్రతిపాదనలను చూడచ్చు.
 
-Also, if you're in developing for the browser, then there are other specs covered in the [second part](info:browser-environment) of the tutorial.
+అలాగే, మీరు బ్రౌజర్ కోసం డెవలపింగ్ చేస్తుంటే, ట్యుటోరియల్ యొక్క [రెండవ భాగం](info:browser-environment)లో ఇతర వివరణములు ఉన్నాయి.
 
-## Manuals
+## నియమ సంపుటి
 
-- **MDN (Mozilla) JavaScript Reference** is a manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
+- **MDN (మొజిల్లా) జావాస్క్రిప్ట్ రిఫరెన్స్** ఉదాహరణలు మరియు ఇతర సమాచారంతో కూడిన నియమ సంపుటి. వ్యక్తిగత భాషా విధులు, పద్ధతులు మొదలైన వాటి గురించి లోతైన సమాచారం పొందడానిక ఇది చాలా తోడ్పడుతుందిి.
 
-    One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+    దీన్ని <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference> లో చూడవచ్చు.
 
-    Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+    అయినప్పటికీ, దీనికి బదులుగా ఇంటర్నెట్ శోధనను ఉపయోగించడం మంచిది. ప్రశ్నలో "MDN [పదం]" ఉపయోగించండి, ఉదా. `parseInt` ఫంక్షన్ కోసం శోధించడానికి <https://google.com/search?q=MDN+parseInt>.
 
 
-- **MSDN** – Microsoft manual with a lot of information, including JavaScript (often referred to as JScript). If one needs something specific to Internet Explorer, better go there: <http://msdn.microsoft.com/>.
+- **MSDN** - మైక్రోసాఫ్ట్ మాన్యువల్‌లో జావాస్క్రిప్ట్‌తో సహా చాలా సమాచారం వుంటుంది (తరచుగా దీనిని JScript అని పిలుస్తారు). ఇంటర్నెట్ ఎక్స్‌ప్లోరర్‌కు కోసం ప్రత్యేకంగా ఏదైనా అవసరమైతే, అక్కడికి వెళ్లండి: <http://msdn.microsoft.com/>.
 
-    Also, we can use an internet search with phrases such as "RegExp MSDN" or "RegExp MSDN jscript".
+    అలాగే, మనం "RegExp MSDN" లేదా "RegExp MSDN jscript" వంటి పదబంధాలతో ఇంటర్నెట్ శోధనను ఉపయోగించవచ్చు.
 
-## Compatibility tables
+## అనుకూలత పట్టికలు
 
-JavaScript is a developing language, new features get added regularly.
+జావాస్క్రిప్ట్ అభివృద్ధి చెందుతున్న భాష, క్రొత్త ఫీచర్లు క్రమ క్రమంగా జోడించబడతాయి.
 
-To see their support among browser-based and other engines, see:
+బ్రౌజర్ ఆధారిత మరియు ఇతర ఇంజిన్‌లలో వాటి మద్దతును చూడటానికి:
 
-- <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+- <http://caniuse.com> - ప్రతి ఫీచర్ యొక్క మద్దతు పట్టిక, ఉదా. ఆధునిక క్రిప్టోగ్రఫీ ఫంక్షన్లకు ఏ ఇంజన్లు మద్దతు ఇస్తాయో చూడటానికి: <http://caniuse.com/#feat=cryptography>.
+- <https://kangax.github.io/compat-table> - భాషా లక్షణాలు మరియు వాటికి మద్దతు ఇచ్చే లేదా మద్దతు ఇవ్వని ఇంజిన్‌లతో కూడిన పట్టిక.
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support etc.
+ఈ వనరులన్నీ నిజ జీవిత అభివృద్ధిలో ఉపయోగపడతాయి, ఎందుకంటే వాటిలో భాషా వివరాలు, వాటి మద్దతు మొదలైన వాటి గురించి విలువైన సమాచారం ఉంటుంది.
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+ఒక నిర్దిష్ట లక్షణం గురించి మీకు లోతైన సమాచారం అవసరమైనప్పుడు దయచేసి వాటిని (లేదా ఈ పేజీ) గుర్తుంచుకోండి.
